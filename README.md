@@ -23,12 +23,12 @@ All options are duplicated with "data-" attribute.
 
 ## Expample:
 
-`<div` 
-	`data-status="1"`
-	`data-type="weekly"`
-	`data-startperiod="3"`
-	`data-endperiod="2"`
-	`data-startdate="Dec 09 2020 00:00:00 GMT+0300"
+```<div
+	data-status="1"
+	data-type="weekly"
+	data-startperiod="3"
+	data-endperiod="2"
+	data-startdate="Dec 09 2020 00:00:00 GMT+0300"
 	data-enddate="Feb 16 2021 00:00:00 GMT+0300"
 	data-starttitle="UNTIL THE TIMER STOPS:"
 	data-endtitle="UNTIL THE TIMER STOPS:"
@@ -39,4 +39,4 @@ All options are duplicated with "data-" attribute.
 	id="maxTimer"
 >
 &nbsp;
-</div>`
+</div>```
