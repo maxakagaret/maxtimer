@@ -1,0 +1,2 @@
+# maxtimer
+simple time counter
