@@ -2,7 +2,7 @@
 Simple time counter
 ## Using:
 1. Add maxtimer.min.css to the head before main styles. Styles has no dependency. (ex. <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.css">)
-2. Scripts requires jquery library. Add maxtimer.min.js to the end of <body> tag after jquery scripts before the main scripts. (ex. <script src="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.js"></script>).
+2. Scripts requires jquery library. Add maxtimer.min.js to the end of <body> tag after jquery scripts before the main scripts. (ex. `<script src="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.js"></script>`).
 3. Add to the your html <div> tag with id "maxTimer" or anything else, what you will use to initiate scripts (ex. <div id="maxTimer"></div>)
 4. Init the timer with js code `$(document).ready(function(){$('your-div-identificator').maxTimer();});`
 
@@ -23,12 +23,12 @@ All options are duplicated with "data-" attribute.
 
 ## Expample:
 
-`<div 
-	data-status="1"
-	data-type="weekly"
-	data-startperiod="3"
-	data-endperiod="2"
-	data-startdate="Dec 09 2020 00:00:00 GMT+0300"
+`<div` 
+	`data-status="1"`
+	`data-type="weekly"`
+	`data-startperiod="3"`
+	`data-endperiod="2"`
+	`data-startdate="Dec 09 2020 00:00:00 GMT+0300"
 	data-enddate="Feb 16 2021 00:00:00 GMT+0300"
 	data-starttitle="UNTIL THE TIMER STOPS:"
 	data-endtitle="UNTIL THE TIMER STOPS:"
