@@ -1,9 +1,9 @@
 # maxtimer
 Simple time counter
 ## Using:
-1. Add maxtimer.min.css to the head before main styles. Styles has no dependency. (ex. <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.css">)
+1. Add maxtimer.min.css to the head before main styles. Styles has no dependency. (ex. `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.css">`)
 2. Scripts requires jquery library. Add maxtimer.min.js to the end of <body> tag after jquery scripts before the main scripts. (ex. `<script src="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.js"></script>`).
-3. Add to the your html <div> tag with id "maxTimer" or anything else, what you will use to initiate scripts (ex. <div id="maxTimer"></div>)
+3. Add to the your html <div> tag with id "maxTimer" or anything else, what you will use to initiate scripts (ex. `<div id="maxTimer"></div>`)
 4. Init the timer with js code `$(document).ready(function(){$('your-div-identificator').maxTimer();});`
 
 #3 Options:
@@ -23,7 +23,8 @@ All options are duplicated with "data-" attribute.
 
 ## Expample:
 
-```<div
+```html
+<div
 	data-status="1"
 	data-type="weekly"
 	data-startperiod="3"
@@ -39,4 +40,5 @@ All options are duplicated with "data-" attribute.
 	id="maxTimer"
 >
 &nbsp;
-</div>```
+</div>
+```
