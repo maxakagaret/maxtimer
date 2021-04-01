@@ -1,0 +1,114 @@
+$textcolor: #fff;
+$backcolor: #f00;
+$textinvert: #f00;
+$backinvert: #fff;
+
+@mixin border-radius($tl:50%, $tr:50%, $br:50%, $bl:50%) {
+	-webkit-border-radius: $tl $tr $br $bl;
+	-moz-border-radius: $tl $tr $br $bl;
+	-ms-border-radius: $tl $tr $br $bl;
+	border-radius: $tl $tr $br $bl;
+}
+@mixin translate($x:0,$y:0,$z:0) {
+	-webkit-transform: translate3d($x,$y,$z);
+	-moz-transform: translate3d($x,$y,$z);
+	-ms-transform: translate3d($x,$y,$z);
+	-o-transform: translate3d($x,$y,$z);
+	transform: translate3d($x,$y,$z);
+}
+@mixin flex($wrap:nowrap,$js:flex-start,$ai:flex-start,$ac:flex-start,$fd:row){
+	-webkit-display: flex;
+	-ms-display: flex;
+	display: flex;
+	-webkit-flex-direction: $fd;
+	-ms-flex-direction: $fd;
+	flex-direction: $fd;
+	-webkit-flex-wrap: $wrap;
+	-ms-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+	-webkit-justify-content: $js;
+	-ms-justify-content: $js;
+	justify-content: $js;
+	-webkit-align-items: $ai;
+	-ms-align-items: $ai;
+	align-items: $ai;
+	-webkit-align-content: $ac;
+	-ms-align-content: $ac;
+	align-content: $ac;
+}
+.maxTimer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+	max-width: 420px;
+	box-sizing: border-box;
+	background: $backcolor;
+	font-family: 'Courier New',monospace;
+	& * {
+		box-sizing: border-box;
+	}
+	.maxTimerTitle {
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		color: $textcolor;
+		text-align: center;
+		padding: 5px 10px;
+	}
+	.maxTimerCounter {
+		@include flex(nowrap,space-between);
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			position: relative;
+			@include flex(nowrap,cetner,center,flex-start,column);
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			margin: 0 5px;
+			padding: 5px 5px 0;
+			text-align: center;
+			/*border: 1px solid $backinvert;*/
+			@incldue border-radius(5px,5px,5px,5px);
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			.number {
+				position: relative;
+				z-index: 2;
+				display: block;
+				font-size: 32px;
+				font-weight: 700;
+				color: $textinvert;
+				line-height: 1;
+				padding: 5px;
+				margin: 0 0 5px;
+				background: $backinvert;
+				border: 1px solid $backinvert;
+				@include border-radius(5px,5px,5px,5px);
+			}
+			.title {
+				position: relative;
+				z-index: 2;
+				font-size: 12px;
+				color: $textcolor;
+				font-weight: bold;
+				margin: 0 0 5px;
+				padding: 0 5px;
+			}
+		}
+	}
+}
+@media all and (max-width: 480px) {
+	.maxTimer {
+		left: 50%;
+		@include translate(-50%);
+	}
+}
