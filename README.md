@@ -1,12 +1,12 @@
 # maxtimer
 Simple time counter
-# Using:
+## Using:
 1. Add maxtimer.min.css to the head before main styles. Styles has no dependency. (ex. <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.css">)
 2. Scripts requires jquery library. Add maxtimer.min.js to the end of <body> tag after jquery scripts before the main scripts. (ex. <script src="https://cdn.jsdelivr.net/gh/maxakagaret/maxtimer@1.0/maxtimer.min.js"></script>).
 3. Add to the your html <div> tag with id "maxTimer" or anything else, what you will use to initiate scripts (ex. <div id="maxTimer"></div>)
-4. Init the timer with js code $(document).ready(function(){$('your-div-identificator').maxTimer();});
+4. Init the timer with js code `$(document).ready(function(){$('your-div-identificator').maxTimer();});`
 
-# Options
+#3 Options:
 All options are duplicated with "data-" attribute.
 1. status (data-status): number, 0/1 (default: 1) - status of the timer. If you want to switch off timer you can use this option
 2. timertype (data-timertype): string, "daily"/"weekly" (default: "daily")- type of timer. "daily" is for time period from start date to end date. Ex. if you set start date as 14 Mart, and end date 14 April, it will work for 1 month without stop. "weekly" is for periodic display of timer. Ex. if you set start date as 14 Mart, end date 14 April, start day of week 1 and start day of week 4, it will work for 1 month only at Mondays, Tuesdays and Wednesdays.
@@ -21,21 +21,22 @@ All options are duplicated with "data-" attribute.
 11. minutes (data-minutes): string (default: "Mins") - option for localisation. Change it if you use another language, then English.
 12. seconds (data-seconds): string (default: "Secs") - option for localisation. Change it if you use another language, then English.
 
-#Expample 
-<div 
-		data-status="1"
-		data-type="weekly"
-		data-startperiod="3"
-		data-endperiod="2"
-		data-startdate="Dec 09 2020 00:00:00 GMT+0300"
-		data-enddate="Feb 16 2021 00:00:00 GMT+0300"
-		data-starttitle="UNTIL THE TIMER STOPS:"
-		data-endtitle="UNTIL THE TIMER STOPS:"
-		data-days="Day(s)"
-		data-minutes="Minute(s)"
-		data-hours="Hour(s)"
-		data-seconds="Second(s)"
-		id="maxTimer"
-	>
-		&nbsp;
-	</div>
+## Expample:
+
+`<div 
+	data-status="1"
+	data-type="weekly"
+	data-startperiod="3"
+	data-endperiod="2"
+	data-startdate="Dec 09 2020 00:00:00 GMT+0300"
+	data-enddate="Feb 16 2021 00:00:00 GMT+0300"
+	data-starttitle="UNTIL THE TIMER STOPS:"
+	data-endtitle="UNTIL THE TIMER STOPS:"
+	data-days="Day(s)"
+	data-minutes="Minute(s)"
+	data-hours="Hour(s)"
+	data-seconds="Second(s)"
+	id="maxTimer"
+>
+&nbsp;
+</div>`
